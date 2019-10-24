@@ -1,0 +1,7 @@
+h1 This is SHOW PAGE
+h2 = @post.title
+h2 = @post.content
+
+p = link_to "変更する", edit_post_path
+p = link_to "削除する", post_path(@post), method: :delete, data: { confirm: "Are You Sure you want to delete this?" }
+p = link_to "戻る", root_path
